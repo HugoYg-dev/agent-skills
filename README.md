@@ -17,6 +17,18 @@
 ### 5. handoff
 编写或更新交接文档，使下一个agent可以继续接手工作。
 
+## Scripts
+
+各 harness 的状态栏脚本，按 harness 命名：
+
+### cc-statusline.sh
+Claude Code 状态栏脚本。`~/.claude/scripts/cc-statusline.sh` 软链到本文件，由 `~/.claude/settings.json` 的 `statusLine` 调用。
+
+### agy-statusline.sh
+Antigravity（agy）状态栏脚本，复制自 `~/.gemini/statusline.sh` 的当前快照。输入为空时显示 "agy"。
+
+> 注意：agy-statusline.sh 是快照，`~/.gemini/statusline.sh` 后续修改不会自动同步，需重新复制。
+
 ## 安装（新机器）
 
 ```bash
